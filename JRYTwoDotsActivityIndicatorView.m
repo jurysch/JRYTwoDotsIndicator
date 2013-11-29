@@ -27,24 +27,6 @@
         
         self.backgroundColor = [UIColor clearColor];
         self.hidesWhenStopped = YES;
-        
-//        _dotsView.transform = CGAffineTransformMakeRotation(M_PI_2 * 0.4);
-        
-//        self.layer.borderWidth = 0;
-//        self.shapeLayer.lineWidth = 2.0f;
-//        self.shapeLayer.fillColor = UIColor.clearColor.CGColor;
-        
-//        _dotsView.insetShapeLayer = (CAShapeLayer *)self.layer;
-//        _dotsView.insetShapeLayer.frame = CGRectInset(self.layer.frame, 24, 24);
-//        _dotsView.insetShapeLayer.backgroundColor = (__bridge CGColorRef)([UIColor lightGrayColor]);
-//        
-//        UIBezierPath *insetPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.frame.size.width/2, self.frame.size.height/2)
-//                                                                 radius:self.frame.size.width - 24
-//                                                             startAngle:0
-//                                                               endAngle:(2 * M_PI)
-//                                                              clockwise:YES];
-//        
-//        _dotsView.insetShapeLayer.path = [insetPath CGPath];
     }
     return self;
 }
@@ -131,14 +113,5 @@
 {
     [self.dotsView.layer removeAnimationForKey:@"TwoDotsSpinAnimationKey"];
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end
